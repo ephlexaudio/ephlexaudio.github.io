@@ -1,0 +1,42 @@
+processes[0]: waveshaperb_1
+processes[1]: filter3bb_0
+processes[2]: mixerb_1
+processes[3]: filter3bb_1
+processes[4]: mixerb_0
+processes[5]: waveshaperb_0
+**********************
+processes[0]: waveshaperb_1
+processes[1]: filter3bb_0
+processes[2]: mixerb_1
+processes[3]: waveshaperb_0
+sequencedProcessListJson[0]: filter3bb_1
+sequencedProcessListJson[1]: mixerb_0
+**********************
+processes[0]: waveshaperb_1
+processes[1]: filter3bb_0
+processes[2]: mixerb_1
+sequencedProcessListJson[0]: filter3bb_1
+sequencedProcessListJson[1]: mixerb_0
+sequencedProcessListJson[2]: waveshaperb_0
+**********************
+processes[0]: waveshaperb_1
+processes[1]: mixerb_1
+sequencedProcessListJson[0]: filter3bb_1
+sequencedProcessListJson[1]: mixerb_0
+sequencedProcessListJson[2]: waveshaperb_0
+sequencedProcessListJson[3]: filter3bb_0
+**********************
+processes[0]: waveshaperb_1
+sequencedProcessListJson[0]: filter3bb_1
+sequencedProcessListJson[1]: mixerb_0
+sequencedProcessListJson[2]: waveshaperb_0
+sequencedProcessListJson[3]: filter3bb_0
+sequencedProcessListJson[4]: mixerb_1
+**********************
+sequencedProcessListJson[0]: filter3bb_1
+sequencedProcessListJson[1]: mixerb_0
+sequencedProcessListJson[2]: waveshaperb_0
+sequencedProcessListJson[3]: filter3bb_0
+sequencedProcessListJson[4]: mixerb_1
+sequencedProcessListJson[5]: waveshaperb_1
+**********************
