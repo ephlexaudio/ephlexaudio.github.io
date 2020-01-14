@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title> Ephlex Audio </title>
+
+  <link rel="stylesheet" type="text/css" href="static/admin/css/dashboard.css" >
+  <link rel="stylesheet" type="text/css" href="static/admin/css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="static/admin/css/bootstrap-theme.css">
+  <script language="javascript" type="text/javascript" src="static/admin/js/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="static/admin/js/navigationMenu.js"></script>
+
+</head>
+<body>
+<style>
+.description
+{
+  padding-left:100px;
+  padding-right:100px;
+}
+</style>
+<div class="container-fluid">
+  <div id="topBar" class="row navbar-fixed-top" style="height:50px">
+    <div id="logo" class="col-lg-1 navbar-inverse" style="height:50px;">
+      <img src="static/admin/Images/Main/logo.png" style="width:70px;height:50px;border:1px solid black;"></div>
+      <div id="navigationMenu" class="col-lg-11" style="padding-left:0px;border-left:0px;"></div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <div id="mainContent">
+    <h1 style="text-align:center;"> <b>The FLX Editor Application </b></h1>
+    <br>
+    <p class="description"><b> The FlxEditor is a desktop application that allows the user to create effects using audio signal processing blocks and process parameter controls (Envelope generator, Low Frequency Oscillator) and upload them to the FLX pedal via USB.</b> </p>
+    <hr>
+    <div id="V1Div" >
+      <div id="V1Div_photo">
+        <h2 style="text-align:center;"> Version 1 </h2>
+        <br>
+        <br>
+        <img src="static/admin/Images/FlxEditor/OfxEditor.png"
+        style="display: block;margin-left: auto;margin-right: auto;">
+        <br>
+        <br>
+      </div>
+      <div id="V1Div_text" class="description" >
+        <p>
+          The OfxEditor served the client browser with the editor application.  This was a quasi-MVC
+          application, where the model is the OfxMain process.  The graphics were done using SVG
+          (Scalable Vector Graphics) and D3, a javascript library for using SVG that could be described
+          as jQuery for SVG.  This was a primative version of the editor, as the process symbols were
+          rough and no process parameter controllers were present (more about those in the next
+          Version).
+
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div id="V2Div">
+      <div id="V2Div_photo">
+        <h2 style="text-align:center;"> Version 2 </h2>
+        <br>
+        <br>
+        <img src="static/admin/Images/FlxEditor/OfxEditor2.png"
+        style="display: block;margin-left: auto;margin-right: auto;">
+        <br>
+        <br>
+      </div>
+      <div id="V2Div_text" class="description" >
+        <p>
+          The OfxEditor for this version was a more refined version of the previous editor.  It contained the finished process symbols as well as symbols for the process parameter controls.
+          Click <a href="https://github.com/ephlexaudio/OfxEditorFlask">here</a> for the OfxEditor V2 code.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div id="V3Div" >
+      <div id="V3Div_photo">
+        <h2 style="text-align:center;"> Version 3 </h2>
+        <br>
+        <br>
+        <img src="static/admin/Images/FlxEditor/FlxEditorJava.png"
+        style="display: block;margin-left: auto;margin-right: auto;">
+        <br>
+        <br>
+      </div>
+      <div id="V3Div_text" class="description" >
+        <p>
+          This is the most recent version of FlxEditor, which was re-written in Java using JavaFX. Click <a href="https://github.com/ephlexaudio/FlxEditor/tree/master/FlxEditor">here</a> for the FlxEditor code.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

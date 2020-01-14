@@ -1,0 +1,114 @@
+<html>
+<head>
+  <title> Ephlex Audio </title>
+
+  <link rel="stylesheet" type="text/css" href="static/admin/css/dashboard.css" >
+  <link rel="stylesheet" type="text/css" href="static/admin/css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="static/admin/css/bootstrap-theme.css">
+  <script language="javascript" type="text/javascript" src="static/admin/js/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="static/admin/js/navigationMenu.js"></script>
+
+</head>
+<body>
+<style>
+.description
+{
+  padding-left:100px;
+  padding-right:100px;
+}
+</style>
+<div class="container-fluid">
+  <div id="topBar" class="row navbar-fixed-top" style="height:50px">
+    <div id="logo" class="col-lg-1 navbar-inverse" style="height:50px;">
+      <img src="static/admin/Images/Main/logo.png" style="width:70px;height:50px;border:1px solid black;"></div>
+      <div id="navigationMenu" class="col-lg-11" style="padding-left:0px;border-left:0px;"></div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <div id="mainContent">
+    <h1 style="text-align:center;"><b> Python Tools and Prototyping </b></h1>
+    <br>
+ 	<h5 style="text-align:center;"><b>(This website was done with Python Django)</b> </h5>
+    <br>
+    <hr>
+    <div id="PcbAssemblerDiv" >
+      <h2 style="text-align:center;"> PCB Assembler </h2>
+      <div id="PcbAssemblerDiv_photo" >
+        <br>
+        <br>
+        <img src="static/admin/Images/Python/PcbAssembler_snapshot.png"
+        style="display: block;margin-left: auto;margin-right: auto;">
+        <br>
+        <br>
+      </div>
+      <div id="PcbAssemblerDiv_text"   class="description" >
+        <p>
+          Hand-soldering components on a circuit board can be a long, tedious process, especially when you have a lot of components, some of which are used in multiple places on the board.  I got tired of this and created the PCB Assembler to make the task quicker and easier.  I use Eagle to do circuit board design and layout.  I export three files from Eagle: a bill of materials (which has one line for each component value), an image file (PNG which I convert to GIF), and a Fabmaster file, which contains the coordinates of all component locations.  In the image above the parts circled in red are on top, while the parts circled in blue are on the bottom.
+          Click <a href="https://github.com/ephlexaudio/PcbAssembler">here</a> for the PCB Assembler code.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <div id="ValueArrayHeaderFileWriterDiv">
+      <div id="ValueArrayHeaderFileWriterDiv_photo">
+        <br>
+        <br>
+        <h2 style="text-align:center;"> Value Array Header File Writer </h2>
+        <br>
+        <br>
+      </div>
+      <div id="ValueArrayHeaderFileWriterDiv_text"   class="description" >
+        <p>
+          The processes required a variety of data types.  While the Volume and Mixer processes simply needed floating point type data, the digital filter processes needed an array of filter coefficients.  When it came to being able to control the parameter settings of any given process, the simplest solution was to use an array of 100 of the data type, with 0 to 99 being the parameter value range. In addition to the process data types, user-interface data arrays were also written (i.e filter frequency, delay time, etc.)  Python scripts were written to create these various data arrays, with a parent script running each of these scripts and writing the data from each script to a header file titled "valueArrays.h".
+          Click <a href="https://github.com/ephlexaudio/HeaderFileBuilder">here</a> for the Value Array Header File Writer code.
+        </p>
+      </div>
+    </div>
+    <hr>
+    <hr>
+    <div id="ProcessSequencerPrototypingDiv" >
+      <h2 style="text-align:center;"> Process Sequencer Prototyping </h2>
+      <div id="ProcessSequencerPrototypingDiv_photo" style="text-align:center;overflow: auto; ">
+	<object data="static/admin/sequence.txt" type="text/plain" style="width:400px; height:350px;">
+	<a href="static/admin/sequence.txt"></a>
+	</object>
+	</div>
+      <div id="ProcessSequencerPrototypingDiv_text"  class="description" >
+          <br>
+          <p style="text-align:center;">This was done for pedal version 2, as the processes and interconnections had
+            to be integrated into OfxMain.  I started doing the sorting/sequencing algorithms in C++, but got tired
+            of constantly having to re-compile and add debugging output statements.  So I converted my code into Python
+            and went from there.  Once it was able to sort through multiple process/connection arrangements, I transferred
+            the algorithm back into C++.  Click <a href="https://github.com/ephlexaudio/ProcessSequencer">here</a> for the Process Sequencer Prototype code.
+          </p>
+	<br>
+        </div>
+      </div>
+      <hr>
+      <div id="WaveshaperPrototypingDiv" >
+        <h2 style="text-align:center;"> Waveshaper Prototyping </h2>
+        <div id="WaveshaperPrototypingDiv_photo" >
+          <br>
+          <br>
+          <img src="static/admin/Images/Python/WaveshaperPrototyping.png"
+          style="display: block;margin-left: auto;margin-right: auto;">
+          <br>
+          <br>
+        </div>
+        <div id="WaveshaperPrototypingDiv_text"   class="description" >
+          <br>
+          <p style="text-align:center;">
+            This script was used for testing out waveshaping (distortion/overdrive) algorithms.  The final algorithm models
+	   a waveshaping circuit.  Click <a href="https://github.com/ephlexaudio/WaveshaperSimulation">here</a> for the Waveshaper Prototype code.
+          </p>
+          <br>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  </html>
